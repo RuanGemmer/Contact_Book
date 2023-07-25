@@ -66,6 +66,7 @@ __pycache__/
 media/
 staticfiles/
 static/
+utils/
 
 # Flask stuff:
 instance/
