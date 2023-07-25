@@ -5,6 +5,7 @@
     --clr-white: rgb(245, 245, 255);
     --clr-black: rgb(0, 0, 30);
     --clr-light-gray: rgb(230, 230, 245);
+    --clr-medium-gray: rgb(180, 180, 180);
     --clr-dark-shadow-5: rgba(0, 0, 10, 5%);
     --clr-dark-shadow-10: rgba(0, 0, 10, 10%);
     --clr-dark-shadow-20: rgba(0, 0, 10, 20%);
@@ -273,6 +274,7 @@ svg {
     margin: 0;
     font-size: var(--smallest-font-size);
     list-style: none;
+    color: var(--clr-medium-gray);    
 }
 
 .form-group input,
@@ -314,3 +316,4 @@ svg {
     filter: brightness(80%);
     box-shadow: 0 0 5px var(--link-dark-color);
 }
+
