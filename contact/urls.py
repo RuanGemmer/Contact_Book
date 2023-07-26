@@ -9,7 +9,7 @@ urlpatterns = [
     path('search/', views.search, name='search'),
     path('', views.index, name='index'),
 
-    # contact
+    # Contact
     path('contact/<int:contact_id>/', views.contact, name='contact'),
     path('contact/<int:contact_id>/update/', views.update, name='update'),
     path('contact/<int:contact_id>/delete/', views.delete, name='delete'),

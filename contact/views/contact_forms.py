@@ -3,8 +3,10 @@ from contact.forms import ContactForm
 from django.urls import reverse
 from contact.models import Contact
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
 
 
+@login_required(login_url='contact:login')
 def create(request):
     form_action = reverse('contact:create')
     if request.method == 'POST':
@@ -39,6 +41,7 @@ def create(request):
     )
 
 
+@login_required(login_url='contact:login')
 def update(request, contact_id):
     contact = get_object_or_404(Contact, pk=contact_id, show=True)
     form_action = reverse('contact:update', args=(contact_id,))
@@ -75,6 +78,7 @@ def update(request, contact_id):
     )
 
 
+@login_required(login_url='contact:login')
 def delete(request, contact_id):
     contact = get_object_or_404(Contact, pk=contact_id, show=True)
     confirmation = request.POST.get('confirmation', 'no')
