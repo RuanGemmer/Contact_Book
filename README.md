@@ -14,9 +14,15 @@
 
 Web service developed entirely in Python 3.11.4 with [Django 4.2.3](https://www.djangoproject.com/). Front-End made with HTML5 and CSS3.
 
-The contact book has functions to save, edit, delete contacts.
+The contact book has functions to save, edit, delete contacts. Warning, success and error messages are displayed below the form itself and/or by toastr made in javaScript
 
 The app has user authentication, user management and access restriction according to the user who is accessing it.
+
+<br>
+
+`(PT-BR) Web service desenvolvido inteiramente em Python 3.11.4 com Django 4.2.3. Front-End feito com HTML5 e CSS3.
+A agenda de contatos possui funções para salvar, editar, deletar contatos. Mensagens de aviso, sucesso e erro são exibidas abaixo do próprio formulário e/ou pelo toastr feito em javaScript
+O app possui autenticação de usuários, gerenciamento de usuários e restrição de acesso de acordo com o usuário que está acessando.`
 
 ## Immages
 <h4>Login</h4>
